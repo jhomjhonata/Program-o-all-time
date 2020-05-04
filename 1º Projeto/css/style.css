@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*---Informações na parte superior da pagina---*/
+header div.infos-sup{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d3d3d;
+    padding: 10px 2%;
+    flex-wrap: wrap;
+}
+
+.infos-sup p{
+    color: white;
+    font-size: .9em;
+    margin: 2px;
+}
+
+.infos-sup a{
+    color: white;
+    font-size: .9em;
+    margin: 2px;
+}
+
+.infos-sup a:hover, .infos-sup p:hover{
+    color: #ff9f1a;
+}
+
+/*---Menu e logo da pagina---*/
+div.menu{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 0 2%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*.menu .logo{
+    width: 200px;
+    height: 100px;
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+
+.cont-logo{
+    display: flex;
+    align-items: center;
+}/*olhar linha 24 do index*/
+
+.cont-logo p{
+    font-size: 2em;
+    margin-left: 5px;
+    color: #ff9f1a;
+}/*olhar linha 24 do index*/
+
+.menu .logo{
+    width: 80px;
+    height: 80px;
+    margin: 5px 0;
+    border-radius: 50%;
+    background-image: url('../img/logo_mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}/*olhar linha 24 do index*/
+
+.menu-pc ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-pc ul li{
+    margin: 0 2px;
+    transition: .3s;
+}
+
+.menu ul.ul-pc a:hover{
+    color: #ff9f1a;
+}
+
+.menu-pc ul a{
+    color: white;
+    padding: 20px 10px;
+    /*background-color: green;*/
+    font-size: 1.25em;
+}
+
+/*---Menu cell---*/
+input[type='checkbox']{
+    display: none;
+}
+
+label{
+    width: 40px;
+    height: 40px;
+    /*background-color: red;*/
+    background-image: url('../img/menu.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+}
+
+input[type='checkbox']:checked ~ label{
+    background-image: url('../img/close.png');
+}
+
+input[type='checkbox']:checked ~ nav.menu-cell{
+    display: block;
+}
+
+nav.menu-cell{
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.menu-cell ul{
+    background-color: #6e6b6b;
+}
+
+.menu-cell ul li{
+    padding: 2% 5%;
+    transition: .4s;
+}
+
+.menu ul.ul-cell li:hover{
+    background-color: #ff9f1a;
+}
+
+.menu-cell ul a{
+    color: white;
+    padding: 0 25%;
+}
+
+
+/*---Ajuste de sessão 1---*/
+section.sessao-1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-image: url('../img/christopher-burns.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sessao-1 .text-sessao1{
+    background-color: #ffa01ae1;
+    border: 3px solid white;
+    min-height: 20%;
+    height: auto;
+    width: 60%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 5%;
+}
+
+.text-sessao1 p{
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+    margin-left: 10%;
+    font-style: italic;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+/*---Serviços---*/
+body h1{
+    margin: 80px 0 0 0;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+}
+section.servicos{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.servicos .ind-servicos{
+    flex: 1 1 260px;
+    margin: 5px 10px;
+    transition: .3s;
+}
+
+.ind-servicos h2{
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.ind-servicos h2::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    background-color: #ff9f1a;
+    margin-right: 2px;
+}
+
+.ind-servicos:hover{
+    padding: 10px;
+    box-shadow: 5px 7px 36px 12px rgba(138,134,138,1);
+}
+
+.ind-servicos p{
+    font-size: 1em;
+    text-align: justify;
+    font-weight: 200;
+    line-height: 1.25;
+}
+
+/*---Sessão quem somos? SOBRE---*/
+section.sobre{
+    background-color: #4b4b4b;
+    padding: 5% calc((100% - 1000px) / 2);
+    margin: 50px auto;
+}
+section.sobre .container-sobre{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    padding: 0 2%;
+    align-items: center;
+}
+
+.sobre > h2{
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container-sobre .infos-sobre{
+    flex: 2 1 260px;
+}
+
+.infos-sobre .ind-sobre-infos{
+    margin: 20px 0;
+}
+
+.ind-sobre-infos h2{
+    font-weight: 400;
+}
+
+.ind-sobre-infos p{
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.sobre .img-sobre img{
+    max-width: 100%;
+    flex: 1;
+    align-self: center;
+}
+
+/*---Sessão de contratos já feitos---*/
+section.contratos > h2{
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.contratos .container-contratos{
+    height: auto;
+    /*height: calc(auto + 50px);*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+
+.container-contratos .ind-contrat{
+    flex: 1 1 260px;
+    background-color: #6e6b6b;
+    margin: 2px;
+    width: 260px;
+    height: 180px;
+    border-top: 5px solid #ff9f1a;
+}
+
+/*---Sessão de VANTAGENS---*/
+section.vantagens{
+    background-color: #4b4b4b;
+    /*padding: 100px calc((100% - 500px) / 2);*/
+    
+}
+section.vantagens > h2{
+    margin-top: 40px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container-vantagens{
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ind-vantagens{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*background-color: red;*/
+    margin: 5px 0;
+}
+
+.vantagens img{
+    max-width: 100%;
+    /*width: 50%;*/
+}
+
+.ind-vantagens img{
+    flex: 0 1 50px;
+    /*background-color: green;*/
+}
+
+.ind-vantagens p{
+    text-align: justify;
+    flex: 2 1 260px;
+    /*background-color: yellow;*/
+}
+
+/*---QUem sou??---*/
+
+section.quem-sou h2{
+    margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container-quem-sou{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.img-quem-sou img{
+    max-width: 100%;
+    flex: 1 0 260px;
+}
+
+.infos-quem-sou{
+    flex: 1 1 260px;
+}
+
+.infos-quem-sou p{
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 50px;
+}
+
+/*div.img-perfil{
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #6e6b6b;
+    flex: 1 1 auto;
+}
+
+.infos-quem-sou p{
+    flex: 1 1 70%;
+}*/
+
+/*---Sessão de News Letter---*/
+section.news-letter{
+    background-image: url('../img/ernest-brillo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90vh;
+    padding: 0 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.form-letter{
+    width: 100%;
+    max-width: 750px;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding: 3%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.ind-form{
+    padding: 5px;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    /*background-color: blue;*/
+}
+
+.w100{
+    width: 100%;
+    text-align: center;
+    /*background-color: green;*/
+}
+
+form input[type='text']{
+    width: 100%;
+    padding: 3%;
+    outline: none;
+}
+
+form input[type='email'], form input[type='tel']{
+    width: 100%;
+    padding: 6%;
+    outline: none;
+}
+
+form textarea{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    padding: 3%;
+    outline: none;
+}
+
+form input[type='submit']{
+    width: 100%;
+    max-width: 120px;
+    height: 45px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, black, #ff9f1a);
+    color: white;
+    font-weight: 400;
+    font-size: 2em;
+    border: 2px solid rgb(158, 155, 155);
+    transition: 3s;
+}
+
+form input[type='submit']:hover{
+    background-image: linear-gradient(to left, black, #ff9f1a);
+}
+
+/*---Localização---*/
+section.localizacao > h2{
+    margin-top: 40px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300; 
+}
+
+.container-local{
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img.img-local{
+    max-width: 100%;
+    flex: 0 1 auto;
+    /*background-color: orange;*/
+    align-self: center;
+}
+
+iframe.iframe-local{
+    flex: 2 1 auto;
+    max-width: 100%;
+    margin: 5px;
+    /*border: 2px solid rgb(158, 154, 154);*/
+    /*background-color: red;*/
+}
+
+ul.lista-local{
+    background-color: rgba(158, 154, 154, 0.719);
+    flex: 1 1 0;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    border-radius: 10px;
+}
+
+.lista-local h2{
+    font-size: 2em;
+    font-style: italic;
+    align-self: center;
+    margin-bottom: 20%;
+}
+
+.lista-local li{
+    font-size: 1.2em;
+    margin-bottom: 10%;
+}
+
+/*---Footer---*/
+footer.footer{
+    display: flex;
+    padding: 2% 5%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b4b4b;
+}
+
+.footer .ft-texto{
+    margin-bottom: 8px;
+}
+
+.ft-texto h2{
+    font-size: 2em;
+    font-style: italic;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.itens-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.footer a img:hover{
+    width: 50px;
+    height: 50px;
+}
+
+/*---Desenvolvido---*/
+div.desenvolvido{
+    background-color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+div.desenvolvido p{
+    color: white;
+}
+
+
+
+
+
+
+/*----------------------------------------------------*/
+/*---Medias querys de 550PX---*/
+@media screen and (max-width: 550px){
+    /*---Menu  PC---*/
+    .menu-pc{
+        display: none;
+    }
+
+    label{
+        display: inline-block;
+    }
+
+
+    /*---ajustando formualario---*/
+    .w50{
+        width: 100%;
+        float: none;
+    }
+
+    form input[type='email'], form input[type='tel']{
+        width: 100%;
+        padding: 3%;
+    }
+}
+
+
+
+/*---Medias querys de 700PX---*/
+@media screen and (max-width: 700px){
+    /*texto na frente da logo no header*/
+    .cont-logo P{
+        display: none;
+    }
+
+    /*ajustando img-sobre*/
+    .container-sobre{
+        justify-content: center;
+    }
+
+    /*---ajustando imgs em vantagens---*/
+    .container-vantagens{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*---ajustando img quem sou?---*/
+    .container-quem-sou{
+        justify-content: center;
+    }
+}
+
+/*---Medias querys de 760PX---*/
+@media screen and (max-width: 760px){
+    /*---centrilzando localização---*/
+    .container-local{
+        justify-content: center;
+    }
+    /*ajustando localização*/
+    ul.lista-local{
+        order: -1;
+    }
+}
+
+/*---Medias querys de 930PX---*/
+@media screen and (max-width: 930px){
+    /*ajustando localização*/
+    iframe.iframe-local{
+        order: -1;
+    }
+}

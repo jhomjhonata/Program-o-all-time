@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/*---Classes de controle---*/
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #252323;
+    height: 60px;
+}
+
+header div.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+}

@@ -43,6 +43,9 @@ div.redes-socias{
     flex-direction: row-reverse;
 }
 
+.redes-socias a:nth-child(1) img{
+    width: 15px;
+}
 .redes-socias img{
     width: 20px;
     margin-right: 20px;

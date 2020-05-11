@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Archivo', sans-serif;
 }
 
 html, body{
@@ -37,7 +38,7 @@ header .container{
 }
 
 header div.logo{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Geo', sans-serif;
     font-size: 2em;
     color: white;
 }
@@ -56,4 +57,41 @@ div.redes-socias{
 .redes-socias img{
     width: 20px;
     margin-right: 20px;
+}
+
+/*---Estilizando barra de navegação---*/
+div.navegacao{
+    background-color: #ccc;
+    border-bottom: 3px solid #afadad;
+}
+
+div.navegacao .container{
+    height: 70px;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav.menu-pc ul{
+    flex: 2 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+.menu-pc ul li{
+    margin: 0 10px;
+}
+
+.menu-pc ul a{
+    color: rgb(53, 52, 52);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+input[type="search"]{
+    flex: 1 1 50px;
 }

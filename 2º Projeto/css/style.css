@@ -20,11 +20,30 @@ html, body{
 
 header{
     background-color: #252323;
+}
+
+header .container{
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    align-items: center;
 }
 
 header div.logo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: white;
+}
+
+div.redes-socias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.redes-socias img{
+    width: 20px;
+    margin-right: 20px;
 }

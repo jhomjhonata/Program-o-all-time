@@ -18,6 +18,11 @@ html, body{
     margin: 0 auto;
 }
 
+.clear{
+    clear: both;
+}
+
+/*---Iniciando estilização de header---*/
 header{
     background-color: #252323;
 }
@@ -28,6 +33,7 @@ header .container{
     justify-content: space-between;
     padding: 0 2%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header div.logo{
@@ -41,6 +47,7 @@ div.redes-socias{
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 .redes-socias a:nth-child(1) img{

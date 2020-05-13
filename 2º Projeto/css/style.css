@@ -75,7 +75,7 @@ div.navegacao .container{
 }
 
 nav.menu-pc ul{
-    /*flex: 2 1 0;*/
+    flex: 2 1 0;
     display: flex;
     flex-wrap: wrap;
     margin-right: 30px;
@@ -97,9 +97,15 @@ nav.menu-pc ul{
 }
 
 input[type="search"]{
-    /*flex: 1 1 50px;*/
-    min-width: 250px;
-    max-height: 40px;
+    flex: 1 1 250px;
+    /*min-width: 250px;*/
+    max-height: 36px;
+    min-height: 36px;
     padding-left: 10px;
     outline: none;
+    border: 1px solid #706e6e;
+    background-image: url('../img/lupa.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 25px;
+    background-position: center right;
 }

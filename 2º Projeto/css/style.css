@@ -115,3 +115,13 @@ input[type="search"]{
     background-size: 30px 25px;
     background-position: center right;
 }
+
+/*---Sessão de apresentação---*/
+section.sessao-apresenta{
+    width: 100%;
+}
+
+div.slider img{
+    max-width: 100%;
+    height: 700px;
+}

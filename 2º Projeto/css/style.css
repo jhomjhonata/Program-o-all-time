@@ -54,10 +54,20 @@ div.redes-socias{
 .redes-socias a:nth-child(1) img{
     width: 15px;
 }
-.redes-socias img{
+
+.redes-socias a{
+    color: white;
+    margin: 20px;
+}
+
+.redes-socias a:hover{
+    color: #00bac6;
+}
+
+/*.redes-socias img{
     width: 20px;
     margin-right: 20px;
-}
+}*/
 
 /*---Estilizando barra de navegação---*/
 div.navegacao{

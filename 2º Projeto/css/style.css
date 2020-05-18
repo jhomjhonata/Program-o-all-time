@@ -207,3 +207,56 @@ ul.slick-dots li{
 li.slick-active button{
     background-color: #00bac6;
 }
+
+/*---Sessão de destaque---*/
+.destaque{
+    width: 100%;
+    background-color: #252323;
+    border-top: 2px solid #afadad;
+}
+
+.texto-dest{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 2%;
+    text-align: center;
+}
+
+.texto-dest h1{
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.texto-dest h1 strong{
+    color: #00bac6;
+    font-weight: bold;
+}
+
+.texto-dest p{
+    color: rgb(117, 115, 115);
+    margin-top: 15px;
+}
+
+.img-dest-mon{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img-child{
+    text-align: center;
+}
+
+.img-child .img-ind-dest{
+    background-image: url('../img/content-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+}
+
+.img-dest-mon div.img-ind-dest:hover{
+    background-color: #00bac6;
+}

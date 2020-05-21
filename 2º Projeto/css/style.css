@@ -245,7 +245,11 @@ li.slick-active button{
     justify-content: space-around;
 }
 .img-child{
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
     text-align: center;
+    /*align-content: center;*/
 }
 
 .img-child .img-ind-dest{
@@ -255,6 +259,7 @@ li.slick-active button{
     background-size: cover;
     width: 110px;
     height: 110px;
+    align-self: center;
 }
 
 .img-dest-mon div.img-ind-dest:hover{

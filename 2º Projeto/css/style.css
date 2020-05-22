@@ -253,7 +253,6 @@ li.slick-active button{
 }
 
 .img-child .img-ind-dest{
-    background-image: url('../img/content-1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -262,6 +261,70 @@ li.slick-active button{
     align-self: center;
 }
 
-.img-dest-mon div.img-ind-dest:hover{
-    background-color: #00bac6;
+.img-dest-mon div:first-of-type .img-ind-dest{
+    /*background-color: red;*/
+    background-image: url('../img/content-1.png');
+}
+
+.img-dest-mon div:nth-of-type(2) .img-ind-dest{
+    /*background-color: green;*/
+    background-image: url('../img/content-2.png');
+}
+
+.img-dest-mon div:last-of-type .img-ind-dest{
+    /*background-color: blue;*/
+    background-image: url('../img/content-3.png');
+}
+
+/*---Sessão de Fotos---*/
+section.fotos{
+    background-color: #ccc;
+}
+
+.fotos .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto-cont{
+    flex: 1 1 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.foto-ind{
+    max-width: 100%;
+    height: 200px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto-mom div:nth-of-type(1) .foto-ind{
+    background-color: red;
+    background-image: url('../img/imagem1.png');
+}
+
+.foto-mom div:nth-of-type(2) .foto-ind{
+    background-color: yellow;
+}
+
+.foto-mom div:nth-of-type(3) .foto-ind{
+    background-color: blue;
+}
+
+.foto-mom div:nth-of-type(4) .foto-ind{
+    background-color: green;
+}
+
+.foto-mom div:nth-of-type(5) .foto-ind{
+    background-color: orange;
+}
+
+.foto-mom div:nth-of-type(6) .foto-ind{
+    background-color: purple;
 }

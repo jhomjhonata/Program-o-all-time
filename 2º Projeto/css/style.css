@@ -130,6 +130,10 @@ input[type="search"]{
     flex: 2;
 }
 
+input[type="search"]:focus ~ div.input-pesquisa{
+    border: 5px solid #00bac6;
+}
+
 a.lupa{
     padding: 1.4%;
     color: #ccc;
@@ -224,7 +228,8 @@ li.slick-active button{
 }
 
 .texto-dest{
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 2%;
     text-align: center;

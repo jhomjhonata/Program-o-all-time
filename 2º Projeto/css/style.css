@@ -136,7 +136,7 @@ input[type="search"]:focus ~ div.input-pesquisa{
 
 a.lupa{
     padding: 1.4%;
-    color: #ccc;
+    color: #706e6e;
 }
 
 a.lupa:hover{

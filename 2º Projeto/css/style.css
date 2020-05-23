@@ -112,18 +112,31 @@ nav.menu-pc ul{
     border-bottom: 3px solid #00bac6;
 }
 
+div.input-pesquisa{
+    background-color: white;
+    border: 1px solid #706e6e;
+    display: flex;
+    align-items: center;
+    flex: 1 1 200px;
+    justify-content: space-between;
+}
+
 input[type="search"]{
-    flex: 1 1 250px;
-    /*min-width: 250px;*/
     max-height: 36px;
     min-height: 36px;
     padding-left: 10px;
     outline: none;
-    border: 1px solid #706e6e;
-    background-image: url('../img/lupa.svg');
-    background-repeat: no-repeat;
-    background-size: 30px 25px;
-    background-position: center right;
+    border: none;
+    flex: 2;
+}
+
+a.lupa{
+    padding: 1.4%;
+    color: #ccc;
+}
+
+a.lupa:hover{
+    color: #00bac6;
 }
 
 /*---Sessão de apresentação---*/
@@ -146,11 +159,6 @@ div.img1{
 div.img2{
     background-image: url('../img/banner2.jpg');
 }
-
-/*div.slider img{
-    max-width: 100%;
-    height: 700px;
-}*/
 
 /*---Estilizando botoes de troca de img---*/
 button.slick-arrow{
@@ -246,10 +254,9 @@ li.slick-active button{
 }
 .img-child{
     display: flex;
-    /*justify-content: center;*/
     flex-direction: column;
     text-align: center;
-    /*align-content: center;*/
+    margin-bottom: 40px;
 }
 
 .img-child .img-ind-dest{
@@ -259,6 +266,7 @@ li.slick-active button{
     width: 110px;
     height: 110px;
     align-self: center;
+    margin-bottom: 5px;
 }
 
 .img-dest-mon div:first-of-type .img-ind-dest{
@@ -278,7 +286,7 @@ li.slick-active button{
 
 /*---Sessão de Fotos---*/
 section.fotos{
-    background-color: #ccc;
+    background-color: #eeeeee;
 }
 
 .fotos .container{
@@ -293,7 +301,7 @@ section.fotos{
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 2px solid white;
+    margin: 5px;
 }
 
 .foto-ind{
@@ -311,20 +319,37 @@ section.fotos{
 
 .foto-mom div:nth-of-type(2) .foto-ind{
     background-color: yellow;
+    background-image: url('../img/imagem2.png');
 }
 
 .foto-mom div:nth-of-type(3) .foto-ind{
     background-color: blue;
+    background-image: url('../img/imagem3.png');
 }
 
 .foto-mom div:nth-of-type(4) .foto-ind{
     background-color: green;
+    background-image: url('../img/imagem1.png');
 }
 
 .foto-mom div:nth-of-type(5) .foto-ind{
     background-color: orange;
+    background-image: url('../img/imagem2.png');
 }
 
 .foto-mom div:nth-of-type(6) .foto-ind{
     background-color: purple;
+    background-image: url('../img/imagem3.png');
+}
+
+section.fotos:before{
+    content: '';
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    background-color: #252323;
+    background-image: url('../img/setinha.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }

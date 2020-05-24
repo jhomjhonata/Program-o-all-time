@@ -358,3 +358,23 @@ section.fotos:before{
     background-size: contain;
     background-position: center;
 }
+
+/*---Logos de Patrocinadores---*/
+section.logos-patricionio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    /*background-color: #252323;*/
+}
+
+.logos-patricionio img{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.logos-patricionio img:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 7px 2px #252323;
+}

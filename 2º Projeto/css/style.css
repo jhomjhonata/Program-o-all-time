@@ -370,11 +370,36 @@ section.logos-patricionio{
 }
 
 .logos-patricionio img{
+    max-width: 100%;
     transition: .3s;
     cursor: pointer;
+    margin: 10px 5px;
 }
 
 .logos-patricionio img:hover{
     transform: translateY(-10px);
-    box-shadow: 5px 5px 7px 2px #252323;
+    box-shadow: 5px 5px 7px 2px #8d8c8c;
+}
+
+/*---Footer 01-----*/
+footer.footer1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px calc((100% - 1000px)/2);
+    background-color: #4e5054;
+}
+
+.footer1 div{
+    margin: 10px;
+    flex: 1 1 200px;
+}
+
+.footer1 div p{
+    line-height: 1.25;
+    color: #c2c3c5;
+}
+
+.footer1 div h2{
+    font-weight: 600;
+    font-style: italic !important;
 }

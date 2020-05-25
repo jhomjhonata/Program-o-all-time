@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'DM Mono', monospace;
 }
 
 body{
@@ -13,6 +14,63 @@ body{
 section.area{
     width: 600px;
     height: 550px;
-    margin: 30px auto;
+    margin: 10px auto;
     background-color: #8e44ad;
+}
+
+/*---Inputs de sexo---*/
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.inputs .caps{
+    margin: 0 15px;
+}
+
+/*---Campos de texo---*/
+
+.second-div{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2%;
+    margin-bottom: 90px;
+}
+
+.second-div input[type="number"]{
+    flex: 2;
+    margin: 0 5px;
+    outline: none;
+    padding-left: 5px;
+}
+
+.second-div input[type="button"]{
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: .3s;
+}
+
+input[type=button]:hover{
+    background-color: #353b48;
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+/*---Saidas de dados---*/
+.saidas{
+    padding: 0 2%;
+    line-height: 2;
+}
+
+/*--Footer----*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
 }

@@ -403,3 +403,47 @@ footer.footer1{
     font-weight: 600;
     font-style: italic !important;
 }
+
+.ft-txt1 p:nth-of-type(2):before, .ft-txt1 p:nth-of-type(4):before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/clock.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 2%;
+}
+
+.ft-txt1 p:nth-of-type(2){
+    border-bottom: 1px solid #c2c3c5;
+    padding-bottom: 10px;
+}
+
+.ft-txt1 p:nth-of-type(3){
+    margin-top: 10px;
+}
+
+.ft-txt4 p:nth-of-type(2):before, .ft-txt4 p:nth-of-type(3):before, .ft-txt4 p:nth-of-type(4):before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 2%  
+}
+
+.ft-txt4 p:nth-of-type(2):before{
+    background-image: url('../img/local.png');
+}
+
+.ft-txt4 p:nth-of-type(3):before{
+    background-image: url('../img/email.png');
+}
+
+.ft-txt4 p:nth-of-type(4):before{
+    background-image: url('../img/tell.png');
+}

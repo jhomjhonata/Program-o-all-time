@@ -14,7 +14,7 @@ function calcular(){
     for(let c = 0; c < saidas.length; c++){
         saidas[c] = ' ';
     }*/
-    
+
     let imc = Number(peso_in.value)/(Number(altu_in.value)**2);
     if(imc < 18.5){
         imc_res = 'Abaixo do peso.';
@@ -34,6 +34,8 @@ function calcular(){
         peso_ideal = ((Number(altu_in.value) * 100) - 100) * 0.90;
     }else if(imc_res != 'Peso ideal' && mulher.checked){
         peso_ideal = ((Number(altu_in.value) * 100) - 100) * 0.85;
+    }else if(imc_res == 'Peso ideal'){
+        peso_ideal = ';)';
     }
 
     saidas[0] = window.document.getElementById('p1');

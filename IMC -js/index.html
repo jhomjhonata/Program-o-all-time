@@ -12,20 +12,25 @@
     <body>
         <section class="area">
             <div class="entradas">
-                <p><input type="radio" name="sexo" id="masc">Femenino</p>
-                <p><input type="radio" name="sexo" id="fem"> Masculino</p>
+                <p>
+                    <input checked type="radio" name="sexo" id="masc" >Masculino
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="fem"> Femenino
+                </p>
 
-                Digite seu peso: <input type="number" name="" id="peso">
-                Digite sua altura: <input type="number" name="" id="altura">
-                <input type="button" value="Calcular" id="botao">
+                Digite seu peso: <input type="number" name="" id="peso" placeholder="Em Kgs">
+                Digite sua altura: <input type="number" name="" id="altura" placeholder="Em m">
+                <input type="button" value="Calcular" id="botao" onclick="calcular()">
             </div>
 
             <div class="saidas">
-                <p>Sua altura:</p>
-                <p>Seu peso:</p>
-                <p>Seu IMC:</p>
-                <p>Seu peso ideal seria:</p>
-                <p>Imagem aparece aqui</p>
+                <p id="p1">Sua altura:</p>
+                <p id="p2">Seu peso:</p>
+                <p id="p3">Seu IMC:</p>
+                <p id="p4">Status:</p>
+                <p id="p5">Seu peso ideal seria:</p>
+                <!--<p>Imagem aparece aqui</p>-->
             </div>
         </section>
 

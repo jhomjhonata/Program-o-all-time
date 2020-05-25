@@ -6,22 +6,28 @@
         <meta name="keywords" content="imc, calculo, corporal,peso,altura">
         <meta name="description" content="Site para calculo de IMC">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         <section class="area">
             <div class="entradas">
-                <p>
-                    <input checked type="radio" name="sexo" id="masc" >Masculino
-                </p>
-                <p>
-                    <input type="radio" name="sexo" id="fem"> Femenino
-                </p>
-
-                Digite seu peso: <input type="number" name="" id="peso" placeholder="Em Kgs">
-                Digite sua altura: <input type="number" name="" id="altura" placeholder="Em m">
-                <input type="button" value="Calcular" id="botao" onclick="calcular()">
+                <div class="inputs">
+                    <div class="caps">
+                        <input checked type="radio" name="sexo" id="masc" >
+                        <label for="masc">Masculino</label>
+                    </div>
+                    <div class="caps">
+                        <input type="radio" name="sexo" id="fem">
+                        <label for="fem">Feminino</label>
+                    </div>
+                </div>
+                <div class="second-div">
+                    <input type="number" name="" id="peso" placeholder="Peso em quilos.">
+                    <input type="number" name="" id="altura" placeholder="Altura em metro. Ex: 1.65">
+                    <input type="button" value="Calcular" id="botao" onclick="calcular()">
+                </div>
             </div>
 
             <div class="saidas">
@@ -33,6 +39,10 @@
                 <!--<p>Imagem aparece aqui</p>-->
             </div>
         </section>
+
+        <footer>
+            <p>Os resultados obtidos aqui não devem substituir uma consulta médica!</p>
+        </footer>
 
         <script src="js/functions.js"></script>
     </body>

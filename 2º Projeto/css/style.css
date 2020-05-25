@@ -447,3 +447,24 @@ footer.footer1{
 .ft-txt4 p:nth-of-type(4):before{
     background-image: url('../img/tell.png');
 }
+
+/*---Footer 02---*/
+div.footer2{
+    display: flex;
+    padding: 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252323;
+}
+
+.footer2 p{
+    color: #c2c3c5;
+}
+
+.footer2 #seta-cima{
+    color: white;
+}
+
+#seta-cima:hover{
+    color: #00bac6;
+}

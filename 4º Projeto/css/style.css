@@ -184,3 +184,97 @@ footer{
     text-align: center;
     margin-top: 10px;
 }
+
+
+/*MEDIAS QUERYS*/
+@media screen and (min-width: 768px){
+    /*Menu*/
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1% 0;
+    }
+
+    nav > a{
+        margin-bottom: 0;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*Header*/
+    header{
+        height: 700px;/*fall back*/
+        height: 70vh;
+        justify-content: center;
+    }
+
+    /*Sobre*/
+    #sobre{
+        height: 300px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 300px;
+    }
+
+    /*Servicos*/
+    section#servicos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    #servicos h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #servicos div{
+        flex: 1 1 200px;
+    }
+
+    /*Portifolio*/
+    section#portifolio{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        /*background-color: #8f2faf;*/
+    }
+
+    #portifolio h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #portifolio img{
+        flex: 1 1 200px;
+        height: 170px;
+        margin: 5px;
+        max-width: 100%;
+    }
+
+    /*Contato*/
+    section#contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 900px;
+    }
+
+    #contato h2, p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #contato div{
+        margin-right: 30px;
+    }
+}

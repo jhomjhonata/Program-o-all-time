@@ -476,16 +476,19 @@ form input[type='submit']{
     display: inline-block;
     border: none;
     cursor: pointer;
-    background-image: linear-gradient(to right, black, #ff9f1a);
+    /*background: linear-gradient(to top, black, #ff9f1a);*/
+    background-color: #3d3d3d;
     color: white;
     font-weight: 400;
     font-size: 2em;
     border: 2px solid rgb(158, 155, 155);
-    transition: 3s;
+    border-radius: 8px;
+    transition: .3s;
 }
 
-form input[type='submit']:hover{
-    background-image: linear-gradient(to left, black, #ff9f1a);
+.w100 input[type='submit']:hover{
+    background-color: #fff; /*background-image: linear-gradient(to left, black, #ff9f1a);*/
+    color: #3d3d3d;
 }
 
 /*---Localização---*/

@@ -124,9 +124,9 @@ input[type='checkbox']:checked ~ label{
     background-image: url('../img/close.png');
 }
 
-input[type='checkbox']:checked ~ nav.menu-cell{
+/*input[type='checkbox']:checked ~ nav.menu-cell{
     display: block;
-}
+}*/
 
 nav.menu-cell{
     width: 100%;
